@@ -22,13 +22,15 @@ public class Main {
         mentoria.setDescricao("descrição mentoria java");
         mentoria.setData(LocalDate.now());
 
-        /*System.out.println(curso1);
-        System.out.println(curso2);
-        System.out.println(mentoria);*/
+        /*
+         * System.out.println(curso1);
+         * System.out.println(curso2);
+         * System.out.println(mentoria);
+         */
 
-        Bootcamp bootcamp = new Bootcamp();
-        bootcamp.setNome("Bootcamp Java Developer");
-        bootcamp.setDescricao("Descrição Bootcamp Java Developer");
+        String bootcampNome = "Bootcamp Java Developer";
+        String bootcampDescricao = "Descrição Bootcamp Java Developer";
+        Bootcamp bootcamp = new Bootcamp(bootcampNome, bootcampDescricao, null);
         bootcamp.getConteudos().add(curso1);
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria);
